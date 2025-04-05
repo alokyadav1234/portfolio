@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+  margin: 20px 170px;
+  gap: 5px;
+}
+
+.nav-line {
+  display: flex;
+  border-bottom: 2px solid #ccc; /* Style the line */
+  width: 70%;
+  height: 0; /* No height, just a line */
+  /* justify-items: left; */
+}
+
+.nav-menu-container {
+  position: relative;
+}
+
+.nav-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0px;
+  background-color: #eaf185;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: transform 0.3s ease; /* Smooth animation for dot */
+}
+/* .nav-menu {
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  font-size: 20px;
+} */
+
+.nav-menu {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  /* background-color: #fff; */
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  opacity: 0; /* Initially hidden */
+  transform: scaleY(0); /* Collapse vertically */
+  transform-origin: top; /* Animate from the top */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth animation */
+  z-index: 1000;
+}
+
+.nav-menu.show {
+  opacity: 1; /* Fully visible */
+  transform: scaleY(1); /* Expand vertically */
+}
+
+.nav-menu.hide {
+  opacity: 0; /* Fully hidden */
+  transform: scaleY(0); /* Collapse vertically */
+}
+
+.nav-menu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.nav-connect {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #8923e1);
+  font-size: 18px;
+  cursor: pointer;
+}
+.nav-connect:hover {
+  background: linear-gradient(267deg, #8923e1 0.36%, #da7c25);
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.05);
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}

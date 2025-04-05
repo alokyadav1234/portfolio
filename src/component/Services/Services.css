@@ -1,0 +1,149 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  align-self: center;
+  margin: auto 50px;
+}
+
+/* swipercode */
+.services-carousel {
+  width: 100%;
+  max-width: 1200px;
+  /* padding-bottom: 40px; */
+  /* height: 100%; */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff00ff; /* Customize navigation button color */
+}
+
+.swiper-pagination-bullet {
+  background: #ff00ff; /* Customize pagination bullet color */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.services-image {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+}
+
+/* swipercode */
+
+.services-title {
+  position: relative;
+}
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.services-title img {
+  position: absolute;
+  bottom: -36px;
+  right: -30px;
+  z-index: -1;
+}
+
+.services-format {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  height: 250px;
+}
+
+/* .services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 80px;
+} */
+
+.services-format h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.services-format h2 {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(267deg, #da7c25 50%, #8923e1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-format p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #d4d4d4;
+  max-width: 300px;
+}
+.services-readmore {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.services-format:hover {
+  border: 2px solid #ff00ff;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(45deg, #3f0028 0%, #582300);
+}
+@media (max-width: 768px) {
+  .services {
+    align-items: start;
+    gap: 70px;
+    margin: 20px 70px;
+  }
+
+  .services-title h1 {
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px 50px;
+  }
+  .services-title img {
+    width: 100px;
+    bottom: -20px;
+    right: -10px;
+  }
+  .services-format {
+    gap: 20px;
+    padding: 32px;
+    align-items: center;
+  }
+  /*.services-format h3 {
+    font-size: 20px;
+  }*/
+  .services-format h2 {
+    font-size: 28px;
+  }
+
+  .services-format p {
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 300px;
+    text-align: center;
+  }
+  .services-readmore img {
+    width: 20px;
+  }
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}

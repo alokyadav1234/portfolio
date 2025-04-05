@@ -1,0 +1,107 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.services-format2 p {
+  margin: 0; /* Removes unwanted space */
+  padding: 0px 0; /* Adjusts text positioning */
+  line-height: 1.9; /* Improves readability */
+}
+.modal-content {
+  /* background: white; */
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.services-format2 {
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  height: 250px;
+
+  /* Make scrollbar visually blend with the border */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #fff transparent; /* Scroll thumb & track color */
+}
+
+/* Custom scrollbar for Webkit-based browsers (Chrome, Safari, Edge) */
+.services-format2::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.services-format2::-webkit-scrollbar-track {
+  background: transparent; /* Track matches fieldset background */
+  border-radius: 10px; /* Rounded track */
+}
+
+.services-format2::-webkit-scrollbar-thumb {
+  background: #fff; /* Same as border color */
+  border-radius: 10px; /* Rounded scrollbar */
+  border: 2px solid transparent; /* Invisible border to blend with fieldset */
+}
+
+.services-format2::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.8); /* Slight transparency on hover */
+}
+
+.services-format2 h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.services-format2 h2 {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(267deg, #da7c25 50%, #8923e1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-format2 p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #d4d4d4;
+  max-width: 300px;
+}
