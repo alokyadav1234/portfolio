@@ -25,7 +25,15 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My Resume</div>
+        <div className="hero-resume">
+          <a
+            className="anchor-link"
+            href=" /portfolio/public/resume.pdf"
+            target="_blank"
+          >
+            My Resume
+          </a>
+        </div>
       </div>
     </fieldset>
   );
