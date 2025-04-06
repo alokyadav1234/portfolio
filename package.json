@@ -2,7 +2,6 @@
   "name": "portfolio-react",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://main.d375hskaqzou6t.amplifyapp.com/portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
