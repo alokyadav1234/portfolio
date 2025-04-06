@@ -143,11 +143,12 @@
   .contact-title img {
     width: 130px;
     bottom: -20px;
-    right: -70px;
+    right: 48px;
   }
 
   .contact-sections {
     flex-direction: column;
+    align-self: center;
   }
 
   .contact-left h1 {

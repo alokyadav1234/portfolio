@@ -95,7 +95,7 @@
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 50px;
+    font-size: 46px;
   }
   .hero p {
     font-size: 20px;
@@ -130,6 +130,10 @@
 
   .anchor-link {
     text-decoration: none;
+  }
+  .hero-container {
+    align-items: center;
+    justify-content: center;
   }
 
   /* .hero img {

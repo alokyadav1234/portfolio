@@ -108,13 +108,14 @@
     align-items: center;
     justify-content: center; */
     gap: 80px;
-    margin: 150px 100px;
+    margin: 85px 100px;
     align-items: start;
     justify-content: center;
   }
 
   .about-title {
     align-self: center;
+    margin: 0px;
   }
   .about-title h1 {
     font-size: 50px;
@@ -124,7 +125,7 @@
   .about-title img {
     width: 100px;
     bottom: -20px;
-    right: -10px;
+    right: 57px;
   }
   .about-sections {
     flex-direction: column;
@@ -151,10 +152,14 @@
   .about-skill hr {
     height: 6px;
   }
+  .achivements-container {
+    align-self: center;
+  }
   .about-achievements {
     justify-content: space-between;
     gap: 30px;
     text-align: center;
+    align-self: self-start;
   }
   /* .about-achievement {
     gap: 20px;

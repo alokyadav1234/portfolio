@@ -106,9 +106,14 @@
 }
 @media (max-width: 768px) {
   .services {
-    align-items: start;
+    align-items: center;
     gap: 70px;
-    margin: 20px 70px;
+    margin: 0px 20px;
+    width: 100%;
+  }
+  .services-carousel {
+    width: 100% auto;
+    max-width: 100%;
   }
 
   .services-title h1 {
@@ -119,18 +124,20 @@
   .services-title img {
     width: 100px;
     bottom: -20px;
-    right: -10px;
+    right: 7px;
   }
   .services-format {
     gap: 20px;
     padding: 32px;
     align-items: center;
+    margin: 0px 20px auto;
   }
   /*.services-format h3 {
     font-size: 20px;
   }*/
-  .services-format h2 {
-    font-size: 28px;
+  .services-format h2,
+  h3 {
+    font-size: 22px;
   }
 
   .services-format p {
